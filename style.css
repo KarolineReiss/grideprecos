@@ -1,0 +1,135 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #cecccc;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    color: hsl(204, 43%, 93%);
+}
+
+.container {
+    width: 1440px;
+    height: 1000px;
+    background: #cecccc;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 28% 28%;
+    justify-content: center;
+    align-content: center;
+}
+
+.principal {
+    border-radius: 10px 10px 0 0;
+    background: #FFFFFF;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px 10px 10px 60px;
+}
+
+h1 {
+    color:hsl(179, 62%, 43%);
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.principal p {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(218, 22%, 67%)
+}
+
+h3 {
+    color: hsl(204, 43%, 93%);
+}
+
+h4 {
+    color: hsl(204, 43%, 93%);
+}
+
+.quadroesquerda {
+    border-radius: 0 0 0 10px;
+    background: #2bb3b1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px 10px 10px 60px;
+}
+
+.quadrodireita {
+    border-radius: 0 0 10px 0;
+    background: #4abebd;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 20px 10px 10px 60px;
+}
+
+.quadrodireita p {
+    margin: 5px auto;
+}
+
+.conteudopreco {
+    display: table;
+}
+
+.preco {
+    display: table;
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.textopreco {    
+    display: table;
+    float: left;
+    padding: 15px 0 0 15px;
+}
+
+button {
+    background: hsl(71, 73%, 54%);
+    width: 240px;
+    height: 50px;
+    margin-top:20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px -4px;
+}
+
+button:hover {
+    background: hsl(76, 75%, 57%);
+    transform: scale(1.2);
+}
+
+footer {
+    background: #cecccc;
+    width: 1440px;
+    text-align: center;
+}
+
+/* CSS Mobile */
+
+@media screen and (max-width: 375px) {
+    .container, footer {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+    .principal {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    .quadroesquerda {
+        border-radius: unset;
+        width: 100%;
+    }
+
+    .quadrodireita {
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+}
